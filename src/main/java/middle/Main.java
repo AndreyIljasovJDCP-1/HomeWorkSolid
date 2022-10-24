@@ -1,3 +1,5 @@
+package middle;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
@@ -30,11 +32,11 @@ public class Main {
         //Scanner scanner = new Scanner(System.in);
 
         //todo размер массива объектов задаем в зависимости от продуктовой линейки
-        //Purchase purchase = new Purchase(productLineSize);
+        //middle.Purchase purchase = new middle.Purchase(productLineSize);
         //todo Зачем хранить данные о всех покупках в классе покупка,
         // так у каждого объекта будет еще и свой, пустой неиспользуемый! массив
-        // класс Purchase будет использоваться для хранения состояния только 1 объекта покупки
-        // для хранения и обработки данных о всех покупках создадим отдельный класс Basket
+        // класс middle.Purchase будет использоваться для хранения состояния только 1 объекта покупки
+        // для хранения и обработки данных о всех покупках создадим отдельный класс middle.Basket
         // в него переносится вся логика по обработке данных
         Basket basket = new Basket(productLineSize);
 
@@ -61,7 +63,7 @@ public class Main {
             try {
                 int count = Integer.parseInt(parts[1]);
 
-                //todo за обработку данных теперь отвечает класс Basket
+                //todo за обработку данных теперь отвечает класс middle.Basket
                 //purchase.addPurchase(product, count);
                 basket.addPurchase(product, count);
             } catch (NumberFormatException e) {
@@ -70,7 +72,7 @@ public class Main {
 
         }
         //todo long на int, т.к. int count парсим и используем для хранения
-        //todo за обработку данных теперь отвечает класс Basket
+        //todo за обработку данных теперь отвечает класс middle.Basket
         //int sum = purchase.sum(products);
         //todo если нам нужна сумма для каких-то еще вычислений,
         // например чек не должен превышать какой-то предел

@@ -1,3 +1,7 @@
+package strong;
+
+import middle.Main;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.TreeMap;

@@ -1,3 +1,5 @@
+package middle;
+
 import java.util.Map;
 
 public class Basket {
@@ -36,14 +38,14 @@ public class Basket {
     }
 
     public void printBasket(Map<String, Integer> prices) {
-        //todo long на int, т.к.  и используем для хранения
+        //todo long на int, т.к. int count и используем для хранения
         long sum = 0;
         System.out.println("КОРЗИНА:");
         for (int i = 0; i < purchases.length; i++) {
             //todo можно обойтись без создания новых объектов
             //todo объекты добавляются в массив по порядку и 1-й null,
             // значит больше объектов нет можно выходить, поэтому break
-            /*Purchase purchase = purchases[i];
+            /*middle.Purchase purchase = purchases[i];
             if (purchase == null) continue;
             System.out.println("\t" + purchase.title + " " + purchase.count + " шт. в сумме " + (purchase.count * prices.get(purchase.title)) + " руб.");
             sum += purchase.count * prices.get(purchase.title);*/

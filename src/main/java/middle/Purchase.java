@@ -1,3 +1,5 @@
+package middle;
+
 public class Purchase {
 
     private final String title;
@@ -8,14 +10,14 @@ public class Purchase {
         this.count = count;
     }
 
-    /*public Purchase(int size) {
-        this.purchases = new Purchase[size];
+    /*public middle.Purchase(int size) {
+        this.purchases = new middle.Purchase[size];
     }
 
     public void addPurchase(String title, int count) {
         for (int i = 0; i < purchases.length; i++) {
             if (purchases[i] == null) {
-                purchases[i] = new Purchase(title, count);
+                purchases[i] = new middle.Purchase(title, count);
                 return;
             }
             if (purchases[i].title.equals(title)) {
@@ -31,7 +33,7 @@ public class Purchase {
         for (int i = 0; i < purchases.length; i++) {
             //todo можно обойтись без создания новых объектов,
             */
-            /*Purchase purchase = purchases[i];
+            /*middle.Purchase purchase = purchases[i];
             if (purchase == null) continue;
             System.out.println("\t" + purchase.title + " " + purchase.count + " шт. в сумме " + (purchase.count * prices.get(purchase.title)) + " руб.");
             sum += purchase.count * prices.get(purchase.title);*/
